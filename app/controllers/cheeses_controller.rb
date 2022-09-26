@@ -1,6 +1,7 @@
 class CheesesController < ApplicationController
 
     def index
-        byebug
-    end
+        cheeses = Cheese.all
+        render json: cheeses
+      end
 end
